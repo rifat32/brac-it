@@ -1,4 +1,11 @@
-import React from 'react'
+import Image from 'next/image';
+import A4 from '../../public/assets/img/arrow-4@2x.svg'
+import S1 from '../../public/assets/img/services/1.png'
+import S2 from '../../public/assets/img/services/2.png'
+import S3 from '../../public/assets/img/services/3.png'
+import Link from 'next/link'
+
+
 
 const ServiceSection = () => {
     return (
@@ -12,9 +19,10 @@ const ServiceSection = () => {
           </div>
           <div className="row mt-3">
             <div className="col-md-4 col-xs-12 service-item align-items-left" data-aos="fade-up" data-aos-delay={200}>
-              <a className="prodet" href="services.html#solution-design">
+              <Link href="/services#solution-design">
+              <a className="prodet" >
                 <div className="zoomin frame">
-                  <img alt="img"  src="assets/img/services/1.png" className="img-fluid"  />
+                  <Image alt="img"  src={S1} className="img-fluid"  />
                 </div>
                 <div className="serviceiinfo mt-4"> 
                   <h4 className="font1 fs22 color1 fw300 lh36">solution design</h4>
@@ -22,15 +30,18 @@ const ServiceSection = () => {
                 </div>
                 <div className=" text-lg-start arrowset">
                   <span href="#" className="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                    <i className="bi">  <img alt="img"  className="arrow-2" src="assets/img/arrow-4@2x.svg" /> </i>
+                    <i className="bi">  <Image alt="img"  className="arrow-2" src={A4} /> </i>
                   </span>
                 </div>
               </a>
+              </Link>
+             
             </div>
             <div className="col-md-4 col-xs-12 service-item align-items-left" data-aos="fade-up" data-aos-delay={300}>
-              <a className="prodet" href="services.html#software-development">
+              <Link href="services#software-development">
+              <a className="prodet" >
                 <div className="zoomin frame">
-                  <img alt="img"  src="assets/img/services/2.png" className="img-fluid"  />
+                <Image alt="img"  src={S2} className="img-fluid"  />
                 </div>                
                 <div className="serviceiinfo mt-4">
                   <h4 className="font1 fs22 color1 fw300 lh36">software development</h4>
@@ -38,15 +49,18 @@ const ServiceSection = () => {
                 </div>
                 <div className=" text-lg-start arrowset">
                   <span href="#" className="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                    <i className="bi">  <img alt="img"  className="arrow-2" src="assets/img/arrow-4@2x.svg" /> </i>
+                    <i className="bi">  <Image alt="img"  className="arrow-2" src={A4} /></i>
                   </span>
                 </div>
               </a>
+              </Link>
+             
             </div>
             <div className="col-md-4 col-xs-12 service-item align-items-left" data-aos="fade-up" data-aos-delay={400}>
-              <a className="prodet" href="services.html#managed-services">
+              <Link href="services#managed-services">
+              <a className="prodet" >
                 <div className="zoomin frame">
-                  <img alt="img"  src="assets/img/services/3.png" className="img-fluid"  />
+                <Image alt="img"  src={S3} className="img-fluid"  />
                 </div>
                 <div className="serviceiinfo mt-4">
                   <h4 className="font1 fs22 color1 fw300 lh36">managed services</h4>
@@ -54,10 +68,12 @@ const ServiceSection = () => {
                 </div>
                 <div className=" text-lg-start arrowset">
                   <span href="#" className="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                    <i className="bi">  <img alt="img"  className="arrow-2" src="assets/img/arrow-4@2x.svg" /> </i>
+                    <i className="bi">  <Image alt="img"  className="arrow-2" src={A4} /> </i>
                   </span>
                 </div>
               </a>
+              </Link>
+              
             </div>
           </div>
         </div>

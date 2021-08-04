@@ -1,5 +1,7 @@
 import {useState,useEffect} from 'react';
 import Link from 'next/link'
+import Image from 'next/image'
+import Logo from '../../public/assets/img/logo.svg'
 const HeaderNav = () => {
   const [current,setCurrent] = useState("")
   useEffect(() => {
@@ -13,7 +15,7 @@ const HeaderNav = () => {
         <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
           <Link href="/">
           <a  className="logo d-flex align-items-center" data-aos="fade-right" data-aos-delay={100}>
-            <img alt="img"  src="assets/img/logo.svg"  />
+            <Image alt="img"  src={Logo}  />
           </a>
           </Link>
         

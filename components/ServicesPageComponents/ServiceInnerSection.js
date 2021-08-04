@@ -1,4 +1,5 @@
-
+import Image from 'next/image'
+import Banner from '../../public/assets/img/services/servicebanner.png'
 
 const ServiceInnerSection = () => {
     return (
@@ -6,7 +7,7 @@ const ServiceInnerSection = () => {
   <div className="container-fluid nopad">
     <div className="row">
       <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay={100}>
-        <img alt="img"  src="assets/img/services/servicebanner.png" className="img-fluid"  />
+        <Image alt="img"  src={Banner} className="img-fluid"  />
       </div>
     </div>
   </div>

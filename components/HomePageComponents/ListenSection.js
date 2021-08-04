@@ -1,4 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from 'next/image';
+import I1 from '../../public/assets/img/items/1.png'
+import I2 from '../../public/assets/img/items/2.png'
+import I4 from '../../public/assets/img/items/4.png'
+import I5 from '../../public/assets/img/items/5.png'
+import I6 from '../../public/assets/img/items/6.png'
+
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
@@ -21,20 +28,20 @@ const ListenSection = () => {
     <Swiper   className="mySwiper"  spaceBetween={50}
       slidesPerView={3} >
     <SwiperSlide  >
-    <div className="item"> <img alt="img"  src="assets/img/items/1.png" className="img-fluid"  /> </div>
+    <div className="item"> <Image alt="img"  src={I1} layout="responsive" className="img-fluid"  /> </div>
     </SwiperSlide>
     <SwiperSlide  >
-    <div className="item"> <img alt="img"  src="assets/img/items/2.png" className="img-fluid"  /> </div>
+    <div className="item"> <Image alt="img"  src={I2} layout="responsive" className="img-fluid"  /> </div>
     </SwiperSlide>
     <SwiperSlide  >
-    <div className="item"> <img alt="img"  src="assets/img/items/4.png" className="img-fluid"  /> </div>
+    <div className="item"> <Image alt="img"  src={I4} layout="responsive" className="img-fluid"  /> </div>
    </SwiperSlide>
    <SwiperSlide  >
-   <div className="item"> <img alt="img"  src="assets/img/items/5.png" className="img-fluid"  /></div>
+   <div className="item"><Image alt="img"  src={I5} layout="responsive" className="img-fluid"  /></div>
    </SwiperSlide>
 
    <SwiperSlide  >
-   <div className="item"> <img alt="img"  src="assets/img/items/6.png" className="img-fluid"  /> </div> 
+   <div className="item"> <Image alt="img"  src={I6} layout="responsive" className="img-fluid"  /> </div> 
    </SwiperSlide>
 
     

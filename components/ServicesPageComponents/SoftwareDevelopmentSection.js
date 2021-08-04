@@ -1,4 +1,5 @@
-
+import Image from 'next/image'
+import S2 from '../../public/assets/img/services/service2.png'
 
 const SoftwareDevelopmentSection = () => {
     return (
@@ -12,7 +13,7 @@ const SoftwareDevelopmentSection = () => {
         </div>
       </div>
       <div className="col-xxl-9 col-xl-8 col-lg-8 col-md-8 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay={100}>
-        <img alt="img"  src="assets/img/services/service2.png" className="img-fluid" />
+        <Image alt="img"  src={S2} className="img-fluid" />
         <div className="box">
           <p> A company’s ability to rapidly develop and compete in a changing business and technological environment is determined by its technology strategy. The software enables technologies to be resilient and thus, shield them from future shock. 
             We will co-create with you the designs and develop products for every platform, including web and mobile, enterprise, and customer-facing. With BRAC IT, you can also avail cloud management, analytical engine and solution services.

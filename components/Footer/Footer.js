@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image';
+import footerLogo from '../../public/assets/img/logofooter.svg'
 
 const Footer = () => {
     return (
@@ -9,7 +11,7 @@ const Footer = () => {
         <div className="col-lg-4 col-md-4 footer-info" data-aos="fade-up" data-aos-delay={200}>
           <Link href="/">
           <a  className="logo d-flex align-items-center">
-            <img alt="img" src="assets/img/logofooter.svg"  />
+            <Image alt="img" src={footerLogo}  />
           </a>  
           </Link>
          

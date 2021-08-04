@@ -31,13 +31,12 @@ function MyApp({ Component, pageProps }) {
   <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
   <script defer src="assets/vendor/aos/aos.js"></script>
   <script defer src="assets/vendor/php-email-form/validate.js"></script>
-  <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  {/* <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script> */}
   <script defer src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script defer src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   
 
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
  
   <script defer  src="./assets/js/main.js"></script>

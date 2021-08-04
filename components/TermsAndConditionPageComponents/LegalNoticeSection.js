@@ -1,4 +1,5 @@
-
+import Image from 'next/image'
+import bottomline from '../../public/assets/img/bottomline.svg'
 
 const LegalNoticeSection = () => {
     return (
@@ -7,7 +8,7 @@ const LegalNoticeSection = () => {
     <div className="row mt-5 ">
       <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 mb-5" data-aos="fade-up" data-aos-delay={100}>            
         <h2 className="font1 fw300 fs50 color1 lh64 mb-4 mt-0"> terms and conditions</h2>
-        <img alt="img"  src="assets/img/bottomline.svg" />
+        <Image alt="img"  src={bottomline} />
       </div>          
     </div>
   </div>

@@ -1,5 +1,15 @@
 
+import sabbir from '../../public/assets/img/team/sabbir.png'
+import atiun from '../../public/assets/img/team/atiun.png'
+import minhajul from '../../public/assets/img/team/minhajul.png'
+import rajon from '../../public/assets/img/team/rajon.png'
+import arif from '../../public/assets/img/team/arif.png'
+import mobasser from '../../public/assets/img/team/mobasser.png'
+import arifZaman from '../../public/assets/img/team/arif-zaman.png'
+import akramuzzaman from '../../public/assets/img/team/aktarujjaman.png'
 
+
+import Image from 'next/image'
 const TeamSection = () => {
     return (
         <section className="team">
@@ -9,7 +19,7 @@ const TeamSection = () => {
       <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-5 teamitem" data-aos="fade-up" data-aos-delay={100}>
         <div className="member">
           <div className="member-img"> <div className="col-lg-9 col-sm-12">
-              <img alt="img" src="assets/img/team/sabbir.png" className="img-fluid"  />
+              <Image alt="img" src={sabbir} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>
@@ -28,7 +38,7 @@ const TeamSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="img"  src="assets/img/team/atiun.png" className="img-fluid"  />
+            <Image alt="img" src={atiun} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>
@@ -47,7 +57,7 @@ const TeamSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="img"  src="assets/img/team/minhajul.png" className="img-fluid"  />
+            <Image alt="img" src={minhajul} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>
@@ -66,7 +76,7 @@ const TeamSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="img"  src="assets/img/team/rajon.png" className="img-fluid"  />
+            <Image alt="img" src={rajon} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>
@@ -85,7 +95,7 @@ const TeamSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="img"  src="assets/img/team/arif.png" className="img-fluid"  />
+            <Image alt="img" src={arif} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>
@@ -104,7 +114,7 @@ const TeamSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="img"  src="assets/img/team/mobasser.png" className="img-fluid"  />
+            <Image alt="img" src={mobasser} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>
@@ -123,7 +133,7 @@ const TeamSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="img"  src="assets/img/team/arif-zaman.png" className="img-fluid"  />
+            <Image alt="img" src={arifZaman} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>
@@ -142,7 +152,7 @@ const TeamSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="img"  src="assets/img/team/aktarujjaman.png" className="img-fluid"  />
+            <Image alt="img" src={akramuzzaman} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>

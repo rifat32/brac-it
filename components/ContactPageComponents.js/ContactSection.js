@@ -1,4 +1,5 @@
-
+import Image from 'next/image'
+import bottomLine from '../../public/assets/img/bottomline.svg'
 
 const ContactSection = () => {
     return (
@@ -12,7 +13,7 @@ const ContactSection = () => {
       </div>
       <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12  order-1 order-md-2 order-sm-1 order-xs-2 contactform">
         <h2>BRAC IT</h2>
-        <img alt="img"  src="assets/img/bottomline.svg" />
+        <Image alt="img"  src={bottomLine} />
         <h4>headquarter </h4>
         <div className="info-box">                 
           <p>Homaira Bhaban<br /> House 115, Road 5<br /> Block B, Niketan, Gulshan 1<br /> Dhaka 1212, Bangladesh</p>

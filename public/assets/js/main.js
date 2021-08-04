@@ -20,8 +20,8 @@
     if (all) {
       select(el, all).forEach(e => e.addEventListener(type, listener))
     } else {
-      // dddddddddddddddddddddd
-  //  select(el, all).addEventListener(type, listener)
+     
+    select(el, all).addEventListener(type, listener)
     }
   }
 
@@ -306,42 +306,42 @@ let slidercontanier = select('.swiper-container-home');
 /************* slider new banner ************/
 //$('.slider')
 
-var swiper = new Swiper('.swiper-container-home', {
-    speed: 1200,
-    parallax: true,
-    loop: true,
-    autoplay: {
-      delay: 10000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
+// var swiper = new Swiper('.swiper-container-home', {
+//     speed: 1200,
+//     parallax: true,
+//     loop: true,
+//     autoplay: {
+//       delay: 10000,
+//       disableOnInteraction: false
+//     },
+//     slidesPerView: 'auto',
+//     pagination: {
+//       el: '.swiper-pagination',
+//       type: 'bullets',
+//       clickable: true
+//     },
 
-    // If we need pagination
-     /* navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },*/
-    runCallbacksOnInit: true,
-    on: {
-    init: function () {
-     // zoomImage(this.$el);
-      moveDownText(this.$el);
-    },
-    slideNextTransitionStart: function () {
-     // zoomImage(this.$el);
-      moveDownText(this.$el);
-    },
-    slidePrevTransitionStart: function () {
-     // zoomImage(this.$el);
-      moveDownText(this.$el);
-    } 
-  }
-    });
+//     // If we need pagination
+//      /* navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//       },*/
+//     runCallbacksOnInit: true,
+//     on: {
+//     init: function () {
+//      // zoomImage(this.$el);
+//       moveDownText(this.$el);
+//     },
+//     slideNextTransitionStart: function () {
+//      // zoomImage(this.$el);
+//       moveDownText(this.$el);
+//     },
+//     slidePrevTransitionStart: function () {
+//      // zoomImage(this.$el);
+//       moveDownText(this.$el);
+//     } 
+//   }
+//     });
 function zoomImage(sliderDOM) {
   const slideActive = sliderDOM.find('.swiper-slide-active, .swiper-slide-duplicate-active');
   const imageSlide = slideActive.find('.slide-inner--image'); 
@@ -389,57 +389,57 @@ function moveDownText(sliderDOM) {
   /**
    * Clients Slider
    */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
-  });
+  // new Swiper('.clients-slider', {
+  //   speed: 400,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 'auto',
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   },
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 40
+  //     },
+  //     480: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 60
+  //     },
+  //     640: {
+  //       slidesPerView: 4,
+  //       spaceBetween: 80
+  //     },
+  //     992: {
+  //       slidesPerView: 6,
+  //       spaceBetween: 120
+  //     }
+  //   }
+  // });
 
 
  /**
    * home Slider
    */
-  new Swiper('.slider', {
-    speed: 2000,
-    loop: true,
-    autoplay: {
-      delay: 6000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'arrow',
-      clickable: true
-    }
-  });
+  // new Swiper('.slider', {
+  //   speed: 2000,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 6000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 'auto',
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'arrow',
+  //     clickable: true
+  //   }
+  // });
 
 
 
@@ -487,46 +487,46 @@ function moveDownText(sliderDOM) {
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  // new Swiper('.portfolio-details-slider', {
+  //   speed: 400,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   }
+  // });
 
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: false,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40
-      },
+  // new Swiper('.testimonials-slider', {
+  //   speed: 600,
+  //   loop: false,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 'auto',
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   },
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 40
+  //     },
 
-      1200: {
-        slidesPerView: 1,
-      }
-    }
-  });
+  //     1200: {
+  //       slidesPerView: 1,
+  //     }
+  //   }
+  // });
 
   /**
    * Animation on scroll

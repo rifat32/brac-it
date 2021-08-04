@@ -1,5 +1,6 @@
 
-
+import Image from 'next/image'
+import S3 from '../../public/assets/img/services/service3.png'
 const ManagedServicedSection = () => {
     return (
         <section id="managed-services" name="managed-services" className="services ">
@@ -12,7 +13,7 @@ const ManagedServicedSection = () => {
         </div>
       </div>
       <div className="col-xxl-9 col-xl-8 col-lg-8 col-md-8 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay={100}>
-        <img alt="img"  src="assets/img/services/service3.png" className="img-fluid" />
+        <Image alt="img"  src={S3} className="img-fluid" />
         <div className="box">
           <p> As the new normal demands better and more efficiency in business, you need a higher level of
             technological agility and robustness to make your business future-proof. 

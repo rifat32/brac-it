@@ -1,5 +1,8 @@
 
-
+import asif from '../../public/assets/img/team/asif.png'
+import shameran from '../../public/assets/img/team/shameran.png'
+import selim from '../../public/assets/img/team/selim.png'
+import Image from 'next/image'
 const ExecutiveManagementSection = () => {
     return (
         <section className="team executiveteam">
@@ -10,7 +13,7 @@ const ExecutiveManagementSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="image" src="assets/img/team/asif.png" className="img-fluid"  />
+              <Image alt="image" src={asif} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>
@@ -30,7 +33,7 @@ const ExecutiveManagementSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="image" src="assets/img/team/shameran.png" className="img-fluid"  />
+               <Image alt="image" src={shameran} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>
@@ -50,7 +53,7 @@ const ExecutiveManagementSection = () => {
         <div className="member">
           <div className="member-img">
             <div className="col-lg-9 col-sm-12">
-              <img alt="img" src="assets/img/team/selim.png" className="img-fluid"  />
+            <Image alt="image" src={selim} className="img-fluid"  />
               <div className="social">
                 <a ><i className="bi bi-twitter" /></a>
                 <a ><i className="bi bi-facebook" /></a>

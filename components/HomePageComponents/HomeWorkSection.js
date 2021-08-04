@@ -1,4 +1,11 @@
 
+import H1 from '../../public/assets/img/homework/1.png'
+
+import H2 from '../../public/assets/img/homework/2.png'
+
+import H3 from '../../public/assets/img/homework/3.png'
+
+import Image from 'next/image'
 
 const HomeWorkSection = () => {
     return (
@@ -13,17 +20,17 @@ const HomeWorkSection = () => {
           </div>
         </div>
         <div className="portfolio-wrap">
-          <img alt="img"  src="assets/img/homework/1.png" className="img-fluid"  />
+          <Image alt="img"  src={H1} className="img-fluid"  />
         </div>
       </div>
       <div className="col-lg-5 col-md-12 col-sm-12">
         <div className="portfolio-wrap">
-          <img alt="img"  src="assets/img/homework/2.png" className="img-fluid"  />
+        <Image alt="img"  src={H2} className="img-fluid"  />
         </div>
       </div>
       <div className="col-lg-7 col-md-12 col-sm-12">
         <div className="portfolio-wrap">
-          <img alt="img"  src="assets/img/homework/3.png" className="img-fluid"  />
+        <Image alt="img"  src={H3} className="img-fluid"  />
         </div>
       </div>
       <div className="col-lg-5 col-md-12 col-sm-12">
